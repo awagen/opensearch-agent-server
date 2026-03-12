@@ -62,12 +62,13 @@ Default: 1000 requests per hour.
 """
 
 # Default authentication configuration
-DEFAULT_AUTH_ENABLED: bool = True
+DEFAULT_AUTH_ENABLED: bool = False
 """Default authentication enabled status.
 
 Set via AG_UI_AUTH_ENABLED environment variable:
-- "true": Authentication enabled (default)
-- "false": Authentication disabled (for development only)
+- "true": Authentication enabled (agent server enforces auth)
+- "false": Authentication disabled (default) — auth headers are still
+  forwarded to the MCP server so OpenSearch can enforce authentication.
 """
 
 DEFAULT_AUTH_MODE: str = "strict"
@@ -235,6 +236,12 @@ DEFAULT_MIME_TYPE: str = "application/octet-stream"
 """Default MIME type used when file MIME type cannot be determined."""
 
 # Default user message when no message content is available
+DEFAULT_MCP_SERVER_URL: str = "http://localhost:3001/mcp"
+"""Default URL for the OpenSearch MCP server (Streamable HTTP).
+
+Overridden by the MCP_SERVER_URL environment variable.
+"""
+
 DEFAULT_USER_MESSAGE: str = "Hello"
 """Default message text used when no user message content is available."""
 

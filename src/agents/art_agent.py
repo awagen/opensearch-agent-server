@@ -17,9 +17,11 @@ import os
 
 from strands import Agent
 
-from utils.logging_helpers import get_logger, log_info_event
 from mcp.client.streamable_http import streamablehttp_client
 from strands.tools.mcp import MCPClient
+
+from server.constants import DEFAULT_MCP_SERVER_URL
+from utils.logging_helpers import get_logger, log_info_event
 
 logger = get_logger(__name__)
 
@@ -27,11 +29,11 @@ logger = get_logger(__name__)
 # Used when BEDROCK_INFERENCE_PROFILE_ARN is not explicitly set.
 _DEFAULT_BEDROCK_MODEL_ID = "us.anthropic.claude-sonnet-4-20250514-v1:0"
 
-DEFAULT_MCP_SERVER_URL = "http://localhost:3001/mcp"
-
 ART_SYSTEM_PROMPT="You are an expert search relevance tuning system."
 
-def create_art_agent(opensearch_url: str) -> Agent:
+def create_art_agent(
+    opensearch_url: str, headers: dict[str, str] | None = None
+) -> Agent:
     """Create the ART orchestrator agent.
 
     Reuses the same LLM model as the fallback agent (Strands default Bedrock
@@ -69,7 +71,7 @@ def create_art_agent(opensearch_url: str) -> Agent:
 
     mcp_server_url = os.getenv("MCP_SERVER_URL", DEFAULT_MCP_SERVER_URL)
 
-    mcp_client = MCPClient(lambda: streamablehttp_client(mcp_server_url))
+    mcp_client = MCPClient(lambda: streamablehttp_client(mcp_server_url, headers=headers))
 
     agent = Agent(
         system_prompt=ART_SYSTEM_PROMPT,
