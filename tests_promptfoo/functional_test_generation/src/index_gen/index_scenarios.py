@@ -5,7 +5,6 @@ from collections.abc import Callable, Collection
 from dataclasses import field
 from datetime import UTC, datetime
 from typing import Literal
-
 import numpy as np
 from pydantic import BaseModel
 
