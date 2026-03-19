@@ -71,9 +71,9 @@ Two options:
   - `PROMPTFOO_REMOTE_API_BASE_URL=http://your-server-address:3000 PROMPTFOO_REMOTE_APP_BASE_URL=http://your-server-address:3000 promptfoo share`
 
 
-### Notes on conversationId and runId in test settings
-- in multi-turn tests, make sure to keep the same conversationId between the turns
-- for single-turn tests, even if conversationId changes, make sure to not set the runId, as this will cache responses and leave those tests out for which the result is already available
+### Notes on threadId and runId in test settings
+- in multi-turn tests, make sure to keep the same threadId between the turns
+- for single-turn tests, even if threadId changes, make sure to not set the runId, as this will cache responses and leave those tests out for which the result is already available
 
 
 ### On Result Persistence

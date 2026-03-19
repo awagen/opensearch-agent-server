@@ -1,4 +1,4 @@
-prompt,__expected1,__expected2,__metadata:conversationId,__metadata:runId
+prompt,__expected1,__expected2,__metadata:threadId,__metadata:runId
 "
                 Help me improve the query 'shoe super' in the index 'test_doc_index'
                 and utilize the tracking data as available in the index 'test_event_index'

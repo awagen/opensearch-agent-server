@@ -148,7 +148,7 @@ def get_multi_step_analysis_test_case_1(
                     ],
                 ),
             ],
-            metadata={"conversationId": conversation_id, "runId": run_id},
+            metadata={"threadId": conversation_id, "runId": run_id},
         ),
         TestCase(
             prompt="Identify reasons for the bad performance of the identified queries as well as strategies. List all strategies in your response. Go ahead right away with the analysis without asking for my permission.",
@@ -159,7 +159,7 @@ def get_multi_step_analysis_test_case_1(
                         """
                 )
             ],
-            metadata={"conversationId": conversation_id, "runId": run_id},
+            metadata={"threadId": conversation_id, "runId": run_id},
         ),
         TestCase(
             prompt="""
@@ -176,7 +176,7 @@ def get_multi_step_analysis_test_case_1(
                     """
                 )
             ],
-            metadata={"conversationId": conversation_id, "runId": run_id},
+            metadata={"threadId": conversation_id, "runId": run_id},
         ),
         TestCase(
             prompt="""
@@ -192,7 +192,7 @@ def get_multi_step_analysis_test_case_1(
                         """
                 )
             ],
-            metadata={"conversationId": conversation_id, "runId": run_id},
+            metadata={"threadId": conversation_id, "runId": run_id},
         ),
     ]
 

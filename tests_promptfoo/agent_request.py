@@ -47,11 +47,11 @@ async def call_api(prompt: str, options: dict, context: dict) -> dict:
     Assumes running ag_ui_server
     """
     # pick those up if configured in test cases, to reflect different tests on different threads
-    # we add uuid here if conversationId / runId are not set to avoid previous redteam attacks staying in context
+    # we add uuid here if threadId / runId are not set to avoid previous redteam attacks staying in context
     thread_id = (
         context.get("vars", {})
         .get("metadata", {})
-        .get("conversationId", f"thread-{uuid.uuid4()}")
+        .get("threadId", f"thread-{uuid.uuid4()}")
     )
     run_id = (
         context.get("vars", {}).get("metadata", {}).get("runId", f"run-{uuid.uuid4()}")
@@ -71,7 +71,8 @@ async def call_api(prompt: str, options: dict, context: dict) -> dict:
         url,
         json=data,
         stream=True,
-        auth=(OS_USERNAME if OS_USERNAME else '', OS_PASSWORD if OS_PASSWORD else '')
+        auth=(OS_USERNAME if OS_USERNAME else '', OS_PASSWORD if OS_PASSWORD else ''),
+        headers={"Host": AG_UI_HOST, "Connection": "keep-alive"}
     )
     status_code = response.status_code
 
