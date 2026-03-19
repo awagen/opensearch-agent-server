@@ -7,6 +7,11 @@ the server codebase, extracted to named constants for better maintainability.
 from __future__ import annotations
 
 import os
+import dotenv
+
+# make .env file vars available
+dotenv.load_dotenv(dotenv.find_dotenv())
+
 
 # Default pagination limits
 DEFAULT_THREAD_LIMIT: int = 50
@@ -129,7 +134,7 @@ Set via AG_UI_EVENT_QUEUE_TIMEOUT environment variable in ServerConfig.
 Default: 5.0 seconds.
 """
 
-DEFAULT_EVENT_STREAM_CHECK_TIMEOUT: float = os.environ.get("AG_UI_DEFAULT_EVENT_STREAM_CHECK_TIMEOUT", 0.1)
+DEFAULT_EVENT_STREAM_CHECK_TIMEOUT: float = float(os.environ.get("AG_UI_DEFAULT_EVENT_STREAM_CHECK_TIMEOUT", "0.1"))
 """Default timeout for event stream check operations (seconds).
 
 Small timeout used to periodically check event queues without busy-waiting.
