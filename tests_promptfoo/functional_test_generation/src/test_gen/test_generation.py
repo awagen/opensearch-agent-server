@@ -3,10 +3,13 @@ import json
 import os
 import sys
 from collections.abc import Collection
+import locale
 
 import yaml
 from dotenv import load_dotenv
 from pydantic import BaseModel, ConfigDict
+
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 # adding the src root to the path here so we can both call the file's main directly
 # as well as call the script via src.test_gen.test_generation from direct parent dir
@@ -35,9 +38,12 @@ from src.utils.tool_utils import (
 from src.utils.utils import flatten_lists
 
 
-def format_value(value, float_decimals: int = 2) -> str | None:
+def format_value(value, float_decimals: int = 1) -> str | None:
     if isinstance(value, float):
-        return str(round(value, float_decimals))
+        if int(value) == value:
+            return str(int(value))
+        else:
+            return locale.format_string(f"%.{float_decimals}f", value)
     if isinstance(value, int):
         return str(value)
     if isinstance(value, dict):
@@ -48,7 +54,7 @@ def format_value(value, float_decimals: int = 2) -> str | None:
 
 
 class FormattedModel(BaseModel):
-    def print_representation(self, float_decimals: int = 2):
+    def print_representation(self, float_decimals: int = 1):
         dict = self.model_dump()
         return {key: format_value(value, float_decimals) for key, value in dict.items()}
 
@@ -391,18 +397,12 @@ class ClickFunctions:
                         contains_all=True,
                         contains_texts=tuple(
                             [
-                                str(query_ctr_result.search_volume),
-                                str(query_ctr_result.searches_with_clicks),
-                                str(query_ctr_result.total_clicks),
-                                str(round(query_ctr_result.ctr_percentage, 2)),
-                                str(
-                                    round(query_ctr_result.average_clicks_per_search, 2)
-                                ),
-                                str(
-                                    round(
-                                        query_ctr_result.zero_click_rate_percentage, 2
-                                    )
-                                ),
+                                format_value(query_ctr_result.search_volume),
+                                format_value(query_ctr_result.searches_with_clicks),
+                                format_value(query_ctr_result.total_clicks),
+                                format_value(query_ctr_result.ctr_percentage),
+                                format_value(query_ctr_result.average_clicks_per_search),
+                                format_value(query_ctr_result.zero_click_rate_percentage)
                             ]
                         ),
                     ),
@@ -452,15 +452,15 @@ class ClickFunctions:
         result = DocumentCTR(**result)
         contains_texts = tuple(
             [
-                str(result.total_impressions),
-                str(result.total_clicks),
-                str(round(result.ctr_percentage, 2)),
+                format_value(result.total_impressions),
+                format_value(result.total_clicks),
+                format_value(result.ctr_percentage, 2),
             ]
         )
         if result.average_position_when_clicked:
             contains_texts = tuple(
                 list(contains_texts)
-                + [str(round(result.average_position_when_clicked, 2))]
+                + [format_value(result.average_position_when_clicked)]
             )
 
         return TestCase(

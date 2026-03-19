@@ -1,6 +1,5 @@
 import json
 import os
-import traceback
 import uuid
 from collections.abc import Iterator
 import requests
@@ -37,7 +36,6 @@ def consume_response_text(iterator: Iterator) -> str:
                     message += json_content.get("delta", "")
             except Exception as ex:
                 logger.warning(f"Decoding message: {decoded_line} failed w exception '{str(ex)}'.")
-                traceback.print_exc()
 
     return message
 

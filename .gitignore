@@ -33,3 +33,6 @@ run_demo.sh
 # OS files
 .DS_Store
 Thumbs.db
+
+# promptfoo
+tests_promptfoo/test_cases/**/results

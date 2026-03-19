@@ -38,8 +38,7 @@ if [ -e "${TARGET_EVAL_CONFIG_FILE}" ] && [ "$OVERWRITE" = false ]; then
 fi
 
 run_promptfoo_generate(){
-    USED_CMD="promptfoo redteam generate -c $INPUT_CONFIG -o $TARGET_EVAL_CONFIG_FILE"
-    echo "Using cmd: $USED_CMD"
+    USED_CMD="AWS_BEARER_TOKEN_BEDROCK=$AWS_BEARER_TOKEN_BEDROCK promptfoo redteam generate -c $INPUT_CONFIG -o $TARGET_EVAL_CONFIG_FILE"
     eval "$USED_CMD"
 }
 

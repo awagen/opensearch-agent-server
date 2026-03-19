@@ -66,8 +66,7 @@ run_promptfoo(){
       fi
       OUTPUT_STRING="$OUTPUT_STRING --output $ADD_OUTPUT"
     done
-    USED_CMD="promptfoo eval -c $EVAL_CONFIG_FILE $OUTPUT_STRING $EVAL_OPTIONS"
-    echo "Using cmd: $USED_CMD"
+    USED_CMD="AWS_BEARER_TOKEN_BEDROCK=$AWS_BEARER_TOKEN_BEDROCK promptfoo eval -c $EVAL_CONFIG_FILE $OUTPUT_STRING $EVAL_OPTIONS"
     eval $USED_CMD
 }
 
