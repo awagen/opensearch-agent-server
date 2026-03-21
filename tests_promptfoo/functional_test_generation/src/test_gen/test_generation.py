@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 script_path = "/".join(os.path.realpath(__file__).split("/")[:-1])
 sys.path.insert(0, f"{script_path}/../../")
 from src.test_gen.assertions import (
-    ContainsAssertion,
+    CaseInsensitiveContainsAssertion,
     LLMRubricAssertion,
     TestCase,
     TestSuite,
@@ -60,9 +60,7 @@ def build_test_suite_fast():
                 create_experiments_last_n_overview_test_case(
                     last_n=10
                 ),
-                create_single_judgement_list_test_case(),
                 create_judgement_list_overview_test_case(last_n=4),
-                create_query_set_test_case(top_n=5),
                 create_search_configs_overview_test_case(),
                 create_query_set_by_id_test_case(),
                 create_top_queries_by_engagement_test_case(
@@ -91,6 +89,24 @@ def build_test_suite_fast():
                 get_worst_performing_queries_30_days_test_case(),
                 get_worst_performing_queries_test_case(),
                 get_ask_for_query_improvement_asks_for_search_config_test_case(),
+                create_single_judgement_list_test_case(),
+                create_query_set_test_case(top_n=5)
+            ]
+        ),
+    )
+
+
+def build_test_suite_for_resource_generation():
+    return TestSuite(
+        name="Resource Generation Test Suite",
+        description="Testing the creation of resources. Note that this alters"
+                    " the state of available resources, and thus tests that check"
+                    " available resources might need regeneration (or run these last)",
+        cases=tuple(
+            [
+                # test cases which create resources
+                # NOTE that these will alter available resources and thus
+                # test cases that test the system state might need regeneration
                 create_query_set_w_queries_test_case(),
                 create_search_config_w_search_fields_test_case(),
             ]
@@ -170,9 +186,12 @@ if __name__ == "__main__":
     )
     test_suite_fast = build_test_suite_fast()
     test_suite_slow = build_test_suite_slow()
+    test_suite_generation = build_test_suite_for_resource_generation()
+
 
     fast_test_path = f"{script_path}/../../../test_cases/functional/fast"
     slow_test_path = f"{script_path}/../../../test_cases/functional/slow"
+    resource_generation_test_path = f"{script_path}/../../../test_cases/functional/generation"
 
     test_suite_fast.write(f"{fast_test_path}/tests.csv")
     with open(f"{fast_test_path}/eval.yaml", "w") as f:
@@ -180,3 +199,6 @@ if __name__ == "__main__":
     test_suite_slow.write(f"{slow_test_path}/tests.csv")
     with open(f"{slow_test_path}/eval.yaml", "w") as f:
         f.write(get_promptfoo_config_from_csv_cases(3000000))
+    test_suite_generation.write(f"{resource_generation_test_path}/tests.csv")
+    with open(f"{resource_generation_test_path}/eval.yaml", "w") as f:
+        f.write(get_promptfoo_config_from_csv_cases(300000))

@@ -1,7 +1,7 @@
 import asyncio
 import json
 from typing import Collection
-from src.test_gen.assertions import TestCase, ContainsAssertion
+from src.test_gen.assertions import TestCase, CaseInsensitiveContainsAssertion
 from src.test_gen.assertions import LLMRubricAssertion
 from src.utils.tool_utils import (
     get_document_ctr,
@@ -43,16 +43,19 @@ class DocumentCTR(FormattedModel):
 
 def get_worst_performing_queries_test_case():
     return TestCase(
-        prompt="""
-        In the following I define categories and corresponding queries that should be mentioned under each category. The response can contain more, but the below should be contained:
-        a) Problematic queries with zero CTR: wirelese and 'spiderwire stealth',
-        b) high-volume queries with relatively low CTR, thus with potential high impact: gold, 'wireless earbun'.
-        Furthermore, the response shall contain next step suggestions including the options:
-        1) generate hypotheses,
-        2) analyze search results.
-        """,
+        prompt="Find the 10 worst performing queries.",
         assertions=[
-            ContainsAssertion(
+            LLMRubricAssertion(
+                eval_prompt="""
+                In the following I define categories and corresponding queries that should be mentioned under each category. The response can contain more, but the below should be contained:
+                a) Problematic queries with zero CTR: wirelese and 'spiderwire stealth',
+                b) high-volume queries with relatively low CTR, thus with potential high impact: gold, 'wireless earbun'.
+                Furthermore, the response shall contain next step suggestions including the options:
+                1) generate hypotheses,
+                2) analyze search results.
+                """
+            ),
+            CaseInsensitiveContainsAssertion(
                 contains_all=True,
                 contains_texts=[
                     "wirelese",
@@ -71,7 +74,7 @@ def get_ubi_event_index_size_test_case():
         prompt="""
             How many events are there in the ubi_events index? Go ahead with the analysis and directly come back to me with an answer.
             """,
-        assertions=[ContainsAssertion(contains_all=True, contains_texts=["3,448"])],
+        assertions=[CaseInsensitiveContainsAssertion(contains_all=True, contains_texts=["3,448"])],
     )
 
 def get_worst_performing_queries_30_days_test_case():
@@ -80,7 +83,7 @@ def get_worst_performing_queries_30_days_test_case():
         What are the worst performing queries of the past 30 days? Go ahead with the analysis and directly come back to me with an answer.
         """,
         assertions=[
-            ContainsAssertion(
+            CaseInsensitiveContainsAssertion(
                 contains_all=True, contains_texts=["spiderwire stealth"]
             )
         ],
@@ -163,7 +166,7 @@ def create_top_n_ctr_test_case(
         zero click rate and ctr. The latter two give in percentages.""",
         assertions=tuple(
             [
-                ContainsAssertion(
+                CaseInsensitiveContainsAssertion(
                     contains_all=True,
                     contains_texts=flatten_lists(
                         [
@@ -231,7 +234,7 @@ def create_query_ctr_test_case(
         zero click rate and ctr. The latter two give in percentages.""",
         assertions=tuple(
             [
-                ContainsAssertion(
+                CaseInsensitiveContainsAssertion(
                     contains_all=True,
                     contains_texts=tuple(
                         [
@@ -311,7 +314,7 @@ def create_document_ctr_test_case(
             and the average click position.""",
         assertions=tuple(
             [
-                ContainsAssertion(contains_all=True, contains_texts=contains_texts),
+                CaseInsensitiveContainsAssertion(contains_all=True, contains_texts=contains_texts),
                 LLMRubricAssertion(
                     eval_prompt=get_document_ctr_rubric_assertion(
                         result
@@ -351,7 +354,7 @@ def create_top_queries_by_engagement_test_case(
                 """,
         assertions=tuple(
             [
-                ContainsAssertion(
+                CaseInsensitiveContainsAssertion(
                     contains_all=True,
                     contains_texts=flatten_lists(
                         [list(x.print_representation().values()) for x in result]

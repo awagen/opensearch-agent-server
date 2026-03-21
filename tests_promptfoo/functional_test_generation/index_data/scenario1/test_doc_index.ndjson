@@ -1,170 +1,170 @@
 {"index": {"_index": "test_doc_index", "_id": "shoe_low0"}}
-{"asin": "shoe_low0", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 77.0, "brand": "other brand"}
+{"asin": "shoe_low0", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 94.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low1"}}
-{"asin": "shoe_low1", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 24.0, "brand": "other brand"}
+{"asin": "shoe_low1", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 79.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low2"}}
 {"asin": "shoe_low2", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 74.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low3"}}
-{"asin": "shoe_low3", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 14.0, "brand": "other brand"}
+{"asin": "shoe_low3", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 80.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low4"}}
-{"asin": "shoe_low4", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 14.0, "brand": "other brand"}
+{"asin": "shoe_low4", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 32.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low5"}}
-{"asin": "shoe_low5", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 73.0, "brand": "other brand"}
+{"asin": "shoe_low5", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 83.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low6"}}
-{"asin": "shoe_low6", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 74.0, "brand": "other brand"}
+{"asin": "shoe_low6", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 50.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low7"}}
-{"asin": "shoe_low7", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 67.0, "brand": "other brand"}
+{"asin": "shoe_low7", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 61.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low8"}}
-{"asin": "shoe_low8", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 50.0, "brand": "other brand"}
+{"asin": "shoe_low8", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 44.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_low9"}}
-{"asin": "shoe_low9", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 50.0, "brand": "other brand"}
+{"asin": "shoe_low9", "bullet_points": null, "description": "super", "color": null, "category": ["some category"], "title": "shoe", "price": 49.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high0"}}
-{"asin": "shoe_high0", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 59.0, "brand": "super"}
+{"asin": "shoe_high0", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 86.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high1"}}
-{"asin": "shoe_high1", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 31.0, "brand": "super"}
+{"asin": "shoe_high1", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 25.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high2"}}
-{"asin": "shoe_high2", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 16.0, "brand": "super"}
+{"asin": "shoe_high2", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 39.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high3"}}
-{"asin": "shoe_high3", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 58.0, "brand": "super"}
+{"asin": "shoe_high3", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 85.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high4"}}
-{"asin": "shoe_high4", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 23.0, "brand": "super"}
+{"asin": "shoe_high4", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 10.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high5"}}
-{"asin": "shoe_high5", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 50.0, "brand": "super"}
+{"asin": "shoe_high5", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 52.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high6"}}
-{"asin": "shoe_high6", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 81.0, "brand": "super"}
+{"asin": "shoe_high6", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 21.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high7"}}
-{"asin": "shoe_high7", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 90.0, "brand": "super"}
+{"asin": "shoe_high7", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 72.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high8"}}
-{"asin": "shoe_high8", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 97.0, "brand": "super"}
+{"asin": "shoe_high8", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 90.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "shoe_high9"}}
-{"asin": "shoe_high9", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 44.0, "brand": "super"}
+{"asin": "shoe_high9", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "shoe", "price": 21.0, "brand": "super"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low0"}}
-{"asin": "trousers_green_low0", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 15.0, "brand": "other brand"}
+{"asin": "trousers_green_low0", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 63.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low1"}}
-{"asin": "trousers_green_low1", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 94.0, "brand": "other brand"}
+{"asin": "trousers_green_low1", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 47.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low2"}}
-{"asin": "trousers_green_low2", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 47.0, "brand": "other brand"}
+{"asin": "trousers_green_low2", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 20.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low3"}}
-{"asin": "trousers_green_low3", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 19.0, "brand": "other brand"}
+{"asin": "trousers_green_low3", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 11.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low4"}}
-{"asin": "trousers_green_low4", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 74.0, "brand": "other brand"}
+{"asin": "trousers_green_low4", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 98.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low5"}}
-{"asin": "trousers_green_low5", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 64.0, "brand": "other brand"}
+{"asin": "trousers_green_low5", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 19.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low6"}}
-{"asin": "trousers_green_low6", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 40.0, "brand": "other brand"}
+{"asin": "trousers_green_low6", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 13.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low7"}}
-{"asin": "trousers_green_low7", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 100.0, "brand": "other brand"}
+{"asin": "trousers_green_low7", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 98.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low8"}}
-{"asin": "trousers_green_low8", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 64.0, "brand": "other brand"}
+{"asin": "trousers_green_low8", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 24.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low9"}}
-{"asin": "trousers_green_low9", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 58.0, "brand": "other brand"}
+{"asin": "trousers_green_low9", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 22.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low10"}}
-{"asin": "trousers_green_low10", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 85.0, "brand": "other brand"}
+{"asin": "trousers_green_low10", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 56.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low11"}}
-{"asin": "trousers_green_low11", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 28.0, "brand": "other brand"}
+{"asin": "trousers_green_low11", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 49.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low12"}}
-{"asin": "trousers_green_low12", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 59.0, "brand": "other brand"}
+{"asin": "trousers_green_low12", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 19.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low13"}}
 {"asin": "trousers_green_low13", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 76.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low14"}}
-{"asin": "trousers_green_low14", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 86.0, "brand": "other brand"}
+{"asin": "trousers_green_low14", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 84.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low15"}}
-{"asin": "trousers_green_low15", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 41.0, "brand": "other brand"}
+{"asin": "trousers_green_low15", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 43.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low16"}}
-{"asin": "trousers_green_low16", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 17.0, "brand": "other brand"}
+{"asin": "trousers_green_low16", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 45.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low17"}}
-{"asin": "trousers_green_low17", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 87.0, "brand": "other brand"}
+{"asin": "trousers_green_low17", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 18.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low18"}}
-{"asin": "trousers_green_low18", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 77.0, "brand": "other brand"}
+{"asin": "trousers_green_low18", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 33.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low19"}}
-{"asin": "trousers_green_low19", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 67.0, "brand": "other brand"}
+{"asin": "trousers_green_low19", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 88.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low20"}}
-{"asin": "trousers_green_low20", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 74.0, "brand": "other brand"}
+{"asin": "trousers_green_low20", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 90.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low21"}}
-{"asin": "trousers_green_low21", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 95.0, "brand": "other brand"}
+{"asin": "trousers_green_low21", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 92.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low22"}}
-{"asin": "trousers_green_low22", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 100.0, "brand": "other brand"}
+{"asin": "trousers_green_low22", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 75.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low23"}}
-{"asin": "trousers_green_low23", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 97.0, "brand": "other brand"}
+{"asin": "trousers_green_low23", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 65.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low24"}}
-{"asin": "trousers_green_low24", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 21.0, "brand": "other brand"}
+{"asin": "trousers_green_low24", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 10.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low25"}}
-{"asin": "trousers_green_low25", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 41.0, "brand": "other brand"}
+{"asin": "trousers_green_low25", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 88.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low26"}}
-{"asin": "trousers_green_low26", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 40.0, "brand": "other brand"}
+{"asin": "trousers_green_low26", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 32.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low27"}}
-{"asin": "trousers_green_low27", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 71.0, "brand": "other brand"}
+{"asin": "trousers_green_low27", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 14.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low28"}}
-{"asin": "trousers_green_low28", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 87.0, "brand": "other brand"}
+{"asin": "trousers_green_low28", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 17.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low29"}}
-{"asin": "trousers_green_low29", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 73.0, "brand": "other brand"}
+{"asin": "trousers_green_low29", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 19.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low30"}}
-{"asin": "trousers_green_low30", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 87.0, "brand": "other brand"}
+{"asin": "trousers_green_low30", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 98.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low31"}}
-{"asin": "trousers_green_low31", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 19.0, "brand": "other brand"}
+{"asin": "trousers_green_low31", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 97.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low32"}}
-{"asin": "trousers_green_low32", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 63.0, "brand": "other brand"}
+{"asin": "trousers_green_low32", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 84.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low33"}}
-{"asin": "trousers_green_low33", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 27.0, "brand": "other brand"}
+{"asin": "trousers_green_low33", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 100.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low34"}}
-{"asin": "trousers_green_low34", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 65.0, "brand": "other brand"}
+{"asin": "trousers_green_low34", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 84.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low35"}}
-{"asin": "trousers_green_low35", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 65.0, "brand": "other brand"}
+{"asin": "trousers_green_low35", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 61.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low36"}}
-{"asin": "trousers_green_low36", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 93.0, "brand": "other brand"}
+{"asin": "trousers_green_low36", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 71.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low37"}}
-{"asin": "trousers_green_low37", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 91.0, "brand": "other brand"}
+{"asin": "trousers_green_low37", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 45.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low38"}}
-{"asin": "trousers_green_low38", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 72.0, "brand": "other brand"}
+{"asin": "trousers_green_low38", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 36.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_low39"}}
-{"asin": "trousers_green_low39", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 12.0, "brand": "other brand"}
+{"asin": "trousers_green_low39", "bullet_points": null, "description": "green", "color": null, "category": ["some category"], "title": "sweet trousers", "price": 74.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high0"}}
-{"asin": "trousers_green_high0", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 38.0, "brand": "other brand"}
+{"asin": "trousers_green_high0", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 94.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high1"}}
-{"asin": "trousers_green_high1", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 41.0, "brand": "other brand"}
+{"asin": "trousers_green_high1", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 60.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high2"}}
-{"asin": "trousers_green_high2", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 36.0, "brand": "other brand"}
+{"asin": "trousers_green_high2", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 95.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high3"}}
-{"asin": "trousers_green_high3", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 17.0, "brand": "other brand"}
+{"asin": "trousers_green_high3", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 25.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high4"}}
-{"asin": "trousers_green_high4", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 81.0, "brand": "other brand"}
+{"asin": "trousers_green_high4", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 24.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high5"}}
-{"asin": "trousers_green_high5", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 59.0, "brand": "other brand"}
+{"asin": "trousers_green_high5", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 96.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high6"}}
-{"asin": "trousers_green_high6", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 100.0, "brand": "other brand"}
+{"asin": "trousers_green_high6", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 66.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high7"}}
-{"asin": "trousers_green_high7", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 50.0, "brand": "other brand"}
+{"asin": "trousers_green_high7", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 89.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high8"}}
-{"asin": "trousers_green_high8", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 28.0, "brand": "other brand"}
+{"asin": "trousers_green_high8", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 17.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "trousers_green_high9"}}
-{"asin": "trousers_green_high9", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 10.0, "brand": "other brand"}
+{"asin": "trousers_green_high9", "bullet_points": null, "description": "some description", "color": "green", "category": ["some category"], "title": "sweet trousers", "price": 26.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low0"}}
-{"asin": "misspelling_low0", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 89.0, "brand": "other brand"}
+{"asin": "misspelling_low0", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 95.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low1"}}
-{"asin": "misspelling_low1", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 61.0, "brand": "other brand"}
+{"asin": "misspelling_low1", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 89.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low2"}}
-{"asin": "misspelling_low2", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 53.0, "brand": "other brand"}
+{"asin": "misspelling_low2", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 81.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low3"}}
-{"asin": "misspelling_low3", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 84.0, "brand": "other brand"}
+{"asin": "misspelling_low3", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 19.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low4"}}
-{"asin": "misspelling_low4", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 21.0, "brand": "other brand"}
+{"asin": "misspelling_low4", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 19.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low5"}}
-{"asin": "misspelling_low5", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 99.0, "brand": "other brand"}
+{"asin": "misspelling_low5", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 63.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low6"}}
-{"asin": "misspelling_low6", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 97.0, "brand": "other brand"}
+{"asin": "misspelling_low6", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 57.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low7"}}
-{"asin": "misspelling_low7", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 65.0, "brand": "other brand"}
+{"asin": "misspelling_low7", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 84.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low8"}}
-{"asin": "misspelling_low8", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 50.0, "brand": "other brand"}
+{"asin": "misspelling_low8", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 13.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_low9"}}
-{"asin": "misspelling_low9", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 82.0, "brand": "other brand"}
+{"asin": "misspelling_low9", "bullet_points": null, "description": "switch", "color": null, "category": ["some category"], "title": "nintendo", "price": 69.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_high0"}}
-{"asin": "misspelling_high0", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 52.0, "brand": "other brand"}
+{"asin": "misspelling_high0", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 86.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_high1"}}
-{"asin": "misspelling_high1", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 22.0, "brand": "other brand"}
+{"asin": "misspelling_high1", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 61.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_high2"}}
-{"asin": "misspelling_high2", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 83.0, "brand": "other brand"}
+{"asin": "misspelling_high2", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 18.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_high3"}}
-{"asin": "misspelling_high3", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 47.0, "brand": "other brand"}
+{"asin": "misspelling_high3", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 90.0, "brand": "other brand"}
 {"index": {"_index": "test_doc_index", "_id": "misspelling_high4"}}
-{"asin": "misspelling_high4", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 61.0, "brand": "other brand"}
+{"asin": "misspelling_high4", "bullet_points": null, "description": "some description", "color": null, "category": ["some category"], "title": "switch", "price": 90.0, "brand": "other brand"}

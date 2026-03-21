@@ -1,6 +1,6 @@
 from typing import Collection
 from src.test_gen.assertions import TestCase, LLMRubricAssertion, \
-    ContainsAssertion
+    CaseInsensitiveContainsAssertion
 
 
 def create_investigate_query_improvement_by_boost_test_case(
@@ -135,7 +135,7 @@ def get_multi_step_analysis_test_case_1(
                       2) analyze search results.
                     """
                 ),
-                ContainsAssertion(
+                CaseInsensitiveContainsAssertion(
                     contains_all=True,
                     contains_texts=[
                         "wirelese",

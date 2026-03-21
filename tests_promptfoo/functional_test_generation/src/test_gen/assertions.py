@@ -22,12 +22,12 @@ class LLMRubricAssertion(Assertion):
         return f"llm-rubric: {self.eval_prompt}"
 
 
-class ContainsAssertion(Assertion):
+class CaseInsensitiveContainsAssertion(Assertion):
     contains_all: bool = True
     contains_texts: list[str] | tuple[str, ...]
 
     def get_csv_assertion_text(self):
-        return f"contains-{'any' if not self.contains_all else 'all'}: {','.join(self.contains_texts)}"
+        return f"icontains-{'any' if not self.contains_all else 'all'}: {','.join(self.contains_texts)}"
 
 
 class TestCase(BaseModel):

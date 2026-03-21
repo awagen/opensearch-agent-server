@@ -1,4 +1,4 @@
-prompt,__expected1,__expected2,__metadata:threadId,__metadata:runId
+prompt,__expected1,__expected2,__metadata:runId,__metadata:threadId
 "
                 Help me improve the query 'shoe super' in the index 'test_doc_index'
                 and utilize the tracking data as available in the index 'test_event_index'
@@ -187,10 +187,10 @@ prompt,__expected1,__expected2,__metadata:threadId,__metadata:runId
                       Furthermore, the response shall contain next step suggestions including the options:
                       1) generate hypotheses,
                       2) analyze search results.
-                    ","contains-all: wirelese,wirels,spiderwire stealth,wi,gold,wireless earbuds,wireless earbun",search_opt1_thread,run-1
+                    ","icontains-all: wirelese,wirels,spiderwire stealth,wi,gold,wireless earbuds,wireless earbun",run-1,search_opt1_thread
 "Identify reasons for the bad performance of the identified queries as well as strategies. List all strategies in your response. Go ahead right away with the analysis without asking for my permission.","llm-rubric: 
                         Response lists plausible reasons and corresponding strategies to resolve the issues.
-                        ",,search_opt1_thread,run-1
+                        ",,run-1,search_opt1_thread
 "
             Try out the proposed strategies one by one and give a conclusive summary of the effectiveness of each.
             Limit the testing of strategies to at most the top 5 most promising.
@@ -199,7 +199,7 @@ prompt,__expected1,__expected2,__metadata:threadId,__metadata:runId
                     The tried out strategies are addressing the most pressing issues identified in the previous discussion. The summary of the effectiveness of each strategy lists appropriate metrics
                     and gives plausible reasoning as to which changes are the most effective.
                     The suggestions explicitly make suggestions for the handling of zero result queries and poor result quality.
-                    ",,search_opt1_thread,run-1
+                    ",,run-1,search_opt1_thread
 "
                 Based on the test results for the proposed strategies, recommend the most effective and give me concrete steps to deploy the change into the test system. C
                 an you directly do this, given your toolset?
@@ -207,4 +207,4 @@ prompt,__expected1,__expected2,__metadata:threadId,__metadata:runId
                 ","llm-rubric: 
                         Given the scenario of a search system, ensure that the most effective are suggested and the response contains plausible strategies for bringing those changes into effect.
                         The response contains answers to the posed questions but does not yet indicate the agent has taken any action towards actually deploying the solution in the given search system.
-                        ",,search_opt1_thread,run-1
+                        ",,run-1,search_opt1_thread
