@@ -15,6 +15,16 @@ from strands.models.bedrock import BedrockModel
 
 from utils.logging_helpers import get_logger, log_info_event
 from utils.monitored_tool import monitored_tool
+# Import experimentation tools. This agent is meant to do only sanity checks,
+# so we don't need all experiment tools.
+# We need to adjust the path here to make tools available,
+# otherwise not found.
+_src_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../../src")
+import sys
+sys.path.insert(0, _src_dir)
+from tools.art.experiment_tools import (
+    aggregate_experiment_results,
+)
 
 logger = get_logger(__name__)
 
@@ -221,12 +231,6 @@ async def hypothesis_agent(query: str) -> str:
         return "Error: OpenSearch tools not configured. Please initialize MCP connection first."
 
     try:
-        # Import experimentation tools. This agent is meant to do only sanity checks,
-        # so we don't need all experiment tools.
-        from src.tools.art.experiment_tools import (
-            aggregate_experiment_results,
-        )
-
         model = BedrockModel(
             model_id=os.getenv("BEDROCK_INFERENCE_PROFILE_ARN"),
             boto_session=bedrock_session,
@@ -278,11 +282,6 @@ async def evaluation_agent(query: str) -> str:
         return "Error: OpenSearch tools not configured. Please initialize MCP connection first."
 
     try:
-        # Import evaluation-specific tools
-        from src.tools.art.experiment_tools import (
-            aggregate_experiment_results,
-        )
-
         model = BedrockModel(
             model_id=os.getenv("BEDROCK_INFERENCE_PROFILE_ARN"),
             boto_session=bedrock_session,
