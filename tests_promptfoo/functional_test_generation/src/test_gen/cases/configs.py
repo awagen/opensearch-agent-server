@@ -134,10 +134,12 @@ def get_search_configs_llm_rubric_assertion(data: list[SearchConfiguration]) -> 
 def create_search_configs_overview_test_case() -> TestCase:
     search_configs: list[SearchConfiguration] = (
         get_all_search_configs()
-    )
+    )[:10]
     return TestCase(
         prompt="""
                Give me an overview of the available search configurations.
+               If less than ten configurations are available, list all, otherwise
+               list the first 10 you find.
                Include the following attributes per query set: the id (the actual search configuration id), name, index, query and search pipeline (if any).
                As per the query, do give me the full query dsl and a description of what the query does.
                """,
