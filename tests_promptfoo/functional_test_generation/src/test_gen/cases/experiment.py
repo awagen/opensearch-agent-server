@@ -66,15 +66,11 @@ def get_top_n_experiments_overview_llm_rubric_assertion(
         data=data,
         relevant_fields=tuple(
             [
-                "timestamp",
                 "type",
                 "status",
                 "querySetId",
                 "searchConfigurationList",
-                "judgmentList",
-                "size",
-                "isScheduled",
-                "scheduledExperimentJobId",
+                "judgmentList"
             ]
         ),
         field_key_to_description={},
@@ -91,8 +87,9 @@ def create_experiments_last_n_overview_test_case(last_n: int) -> TestCase:
     return TestCase(
         prompt=f"""
                 Give me an overview of the last {last_n} most recent experiments.
-                Include the status of each experiment, the query, search configurations,
-                judgement lists, experiment job id and an overview of the available results.
+                Order the experiment from newest to oldest.
+                Include for each experiment the type, status, the query set id, 
+                the list of search configuration ids, the list of judgement list ids.
                 """,
         assertions=tuple(
             [

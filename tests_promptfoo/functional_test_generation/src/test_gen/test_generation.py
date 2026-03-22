@@ -58,7 +58,7 @@ def build_test_suite_fast():
                     ubi_index="ubi_events",
                 ),
                 create_experiments_last_n_overview_test_case(
-                    last_n=10
+                    last_n=5
                 ),
                 create_judgement_list_overview_test_case(last_n=4),
                 create_search_configs_overview_test_case(),

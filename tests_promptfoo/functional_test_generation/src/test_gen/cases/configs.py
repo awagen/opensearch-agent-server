@@ -67,10 +67,9 @@ def get_query_sets_llm_rubric_assertion(data: list[QuerySetResults]) -> str:
     )
 
 
-def create_query_set_test_case(top_n: int) -> TestCase:
-    result: list[QuerySetResults] = (
-        get_query_sets()
-    )
+def create_query_set_test_case(top_n: int,
+                               max_num_queries_per_set: int = 10) -> TestCase:
+    result: list[QuerySetResults] = [x.model_copy(update={"querySetQueries": x.querySetQueries[:max_num_queries_per_set]}) for x in get_query_sets()]
     result = reversed(sorted(result, key=lambda x: x.timestamp))
 
     return TestCase(
@@ -78,7 +77,7 @@ def create_query_set_test_case(top_n: int) -> TestCase:
                Give me an overview of the last {top_n} most recently created query sets.
                Include the following attributes per query set: the id, name,
                description, timestamp and the actual query set, listing a sample
-               of 10 example queries contained in the respective query set.
+               of {max_num_queries_per_set} example queries contained in the respective query set.
                """,
         assertions=tuple(
             [
@@ -125,7 +124,7 @@ def get_search_configs_llm_rubric_assertion(data: list[SearchConfiguration]) -> 
     return Assertions.get_llm_rubric_assertion_yaml(
         data=data,
         relevant_fields=tuple(
-            ["id", "name", "timestamp", "index", "query", "searchPipeline"]
+            ["id", "name", "index", "query", "searchPipeline"]
         ),
         field_key_to_description={},
         description_to_additional_values={},
@@ -139,8 +138,8 @@ def create_search_configs_overview_test_case() -> TestCase:
     return TestCase(
         prompt="""
                Give me an overview of the available search configurations.
-               Include the following attributes per query set: the id, name,
-               timestamp, index, query and search pipeline (if any).
+               Include the following attributes per query set: the id (the actual search configuration id), name, index, query and search pipeline (if any).
+               As per the query, do give me the full query dsl and a description of what the query does.
                """,
         assertions=tuple(
             [

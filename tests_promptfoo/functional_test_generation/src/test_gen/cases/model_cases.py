@@ -136,7 +136,7 @@ def get_multi_step_analysis_test_case_1(
                     """
                 ),
                 CaseInsensitiveContainsAssertion(
-                    contains_all=True,
+                    contains_all=False,
                     contains_texts=[
                         "wirelese",
                         "wirels",

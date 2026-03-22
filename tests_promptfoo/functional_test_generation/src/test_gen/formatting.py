@@ -5,7 +5,7 @@ from pydantic import BaseModel
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 
-def format_value(value, float_decimals: int = 1) -> str | None:
+def format_value(value, float_decimals: int = 2) -> str | None:
     if isinstance(value, float):
         if int(value) == value:
             return str(int(value))
@@ -21,7 +21,7 @@ def format_value(value, float_decimals: int = 1) -> str | None:
 
 
 class FormattedModel(BaseModel):
-    def print_representation(self, float_decimals: int = 1):
+    def print_representation(self, float_decimals: int = 2):
         dict = self.model_dump()
         return {key: format_value(value, float_decimals) for key, value in dict.items()}
 

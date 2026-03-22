@@ -73,11 +73,12 @@ def create_judgement_list_overview_test_case(last_n: int) -> TestCase:
 
     return TestCase(
         prompt=f"""
-                    Give me an overview of the last {last_n} most recently created judgement lists.
-                    Include the following attributes per experiment: the id, timestamp, name,
-                    status, type and judgement ratings. For the judgement ratings, give only examples
-                    for the first 5 queries and per query the first 5 example judgements.
-                    """,
+                Give me an overview of the last {last_n} most recently created judgement lists.
+                Include the following attributes per experiment: the id, timestamp, name,
+                status, type and judgement ratings. For the judgement ratings, give only examples
+                for the first 5 queries and per query the first 5 example judgements.
+                For those example judgements, explicitly give the document id and the score.
+                """,
         assertions=tuple(
             [
                 LLMRubricAssertion(
@@ -127,6 +128,7 @@ def create_single_judgement_list_test_case() -> TestCase:
                Include the following attributes per experiment: the id, timestamp, name,
                status, type and judgement ratings. For the judgement ratings, give only examples
                for the first 5 queries and per query the first 5 example judgements.
+               For those example judgements, explicitly give the document id and the score.
                """,
         assertions=tuple(
             [

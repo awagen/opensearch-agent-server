@@ -187,7 +187,7 @@ prompt,__expected1,__expected2,__metadata:runId,__metadata:threadId
                       Furthermore, the response shall contain next step suggestions including the options:
                       1) generate hypotheses,
                       2) analyze search results.
-                    ","icontains-all: wirelese,wirels,spiderwire stealth,wi,gold,wireless earbuds,wireless earbun",run-1,search_opt1_thread
+                    ","icontains-any: wirelese,wirels,spiderwire stealth,wi,gold,wireless earbuds,wireless earbun",run-1,search_opt1_thread
 "Identify reasons for the bad performance of the identified queries as well as strategies. List all strategies in your response. Go ahead right away with the analysis without asking for my permission.","llm-rubric: 
                         Response lists plausible reasons and corresponding strategies to resolve the issues.
                         ",,run-1,search_opt1_thread

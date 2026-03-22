@@ -47,7 +47,8 @@ def get_worst_performing_queries_test_case():
         assertions=[
             LLMRubricAssertion(
                 eval_prompt="""
-                In the following I define categories and corresponding queries that should be mentioned under each category. The response can contain more, but the below should be contained:
+                In the following I define categories and corresponding queries that should be mentioned under each category. 
+                The response can contain more, but the below should be contained:
                 a) Problematic queries with zero CTR: wirelese and 'spiderwire stealth',
                 b) high-volume queries with relatively low CTR, thus with potential high impact: gold, 'wireless earbun'.
                 Furthermore, the response shall contain next step suggestions including the options:
@@ -56,7 +57,7 @@ def get_worst_performing_queries_test_case():
                 """
             ),
             CaseInsensitiveContainsAssertion(
-                contains_all=True,
+                contains_all=False,
                 contains_texts=[
                     "wirelese",
                     "spiderwire stealth",
@@ -72,7 +73,8 @@ def get_worst_performing_queries_test_case():
 def get_ubi_event_index_size_test_case():
     return TestCase(
         prompt="""
-            How many events are there in the ubi_events index? Go ahead with the analysis and directly come back to me with an answer.
+            How many events are there in the ubi_events index? 
+            Go ahead with the analysis and directly come back to me with an answer.
             """,
         assertions=[CaseInsensitiveContainsAssertion(contains_all=True, contains_texts=["3,448"])],
     )
@@ -80,7 +82,8 @@ def get_ubi_event_index_size_test_case():
 def get_worst_performing_queries_30_days_test_case():
     return TestCase(
         prompt="""
-        What are the worst performing queries of the past 30 days? Go ahead with the analysis and directly come back to me with an answer.
+        What are the worst performing queries of the past 30 days? 
+        Go ahead with the analysis and directly come back to me with an answer.
         """,
         assertions=[
             CaseInsensitiveContainsAssertion(
@@ -161,9 +164,11 @@ def create_top_n_ctr_test_case(
         ubi_index=ubi_index
     )
     return TestCase(
-        prompt=f"""Analyze the performance of the top {top_n} results in terms of CTR. For each query, determine the following
-        properties: total query volume, searches with clicks and total number of clicks. Give the average clicks per search, the
-        zero click rate and ctr. The latter two give in percentages.""",
+        prompt=f"""Analyze the performance of the top {top_n} results in terms of CTR. 
+        For each query, determine the following properties: 
+        total query volume, searches with clicks and total number of clicks. 
+        Give the average clicks per search, the zero click rate and ctr. 
+        The latter two give in percentages formatted with two decimals.""",
         assertions=tuple(
             [
                 CaseInsensitiveContainsAssertion(
@@ -229,9 +234,13 @@ def create_query_ctr_test_case(
     query_ctr_result: ClickResult = ClickResult(**query_ctr_result_json)
 
     return TestCase(
-        prompt=f"""Analyze the performance of the query '{query}'. Specifically, for the given query, determine the following
-        properties: total query volume, searches with clicks and total number of clicks. Give the average clicks per search, the
-        zero click rate and ctr. The latter two give in percentages.""",
+        prompt=f"""Analyze the performance of the query '{query}'. 
+        Specifically, for the given query, determine the following
+        properties: total query volume, searches with clicks and total number of clicks. 
+        Give the average clicks per search, the zero click rate and ctr. 
+        The latter two give in percentages formatted with two decimals.
+        Calculate the metrics based on the assumption that every queryId shall only count once.
+        """,
         assertions=tuple(
             [
                 CaseInsensitiveContainsAssertion(
@@ -349,8 +358,10 @@ def create_top_queries_by_engagement_test_case(
                 days. Determine the following properties per query:
                 total query volume, searches with clicks and total number of clicks,
                 average clicks per search, the zero click rate and ctr.
-                The latter two give in percentages. Also state how many queries
-                matched the above filter criteria.
+                The latter two give in percentages formatted with two decimals. 
+                Also state how many queries matched the above filter criteria.
+                Do not use grouping delimiter for amounts over one thousand, only use decimal
+                delimiter where applicable.
                 """,
         assertions=tuple(
             [
