@@ -25,6 +25,8 @@ sys.path.insert(0, _src_dir)
 from tools.art.experiment_tools import (
     aggregate_experiment_results,
 )
+from tools.art.analysis_tools import get_query_ctr, get_document_ctr, get_query_performance_metrics, \
+    get_top_queries_by_engagement, get_top_documents_by_engagement
 
 logger = get_logger(__name__)
 
@@ -193,6 +195,8 @@ Relevant indexes for your job are indexes holding UBI data. If not specified oth
 for client-side tracked events and ubi_queries for server-side tracked events.
 Be concise, data-driven, specific with numbers, and focus on actual user behavior rather than theoretical analysis.
 Always include concrete metrics (CTR percentages, click counts, search volumes) to support your insights.
+If you find specific functions to call for the values you need
+for analysis, use them, otherwise refer to the MCP tools.
 """
 
 
@@ -341,6 +345,11 @@ async def user_behavior_analysis_agent(query: str) -> str:
         )
 
         ubi_tools = [
+            get_query_ctr,
+            get_document_ctr,
+            get_query_performance_metrics,
+            get_top_queries_by_engagement,
+            get_top_documents_by_engagement,
             # OpenSearch MCP tools
             *_opensearch_tools,
         ]
