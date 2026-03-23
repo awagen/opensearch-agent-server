@@ -235,11 +235,10 @@ def create_query_ctr_test_case(
 
     return TestCase(
         prompt=f"""Analyze the performance of the query '{query}'. 
-        Specifically, for the given query, determine the following
+        Specifically, for the given query, determine and return the following
         properties: total query volume, searches with clicks and total number of clicks. 
-        Give the average clicks per search, the zero click rate and ctr. 
+        Further return the average clicks per search, the zero click rate and ctr. 
         The latter two give in percentages formatted with two decimals.
-        Calculate the metrics based on the assumption that every queryId shall only count once.
         """,
         assertions=tuple(
             [

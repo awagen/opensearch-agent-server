@@ -90,6 +90,8 @@ def create_experiments_last_n_overview_test_case(last_n: int) -> TestCase:
                 Order the experiment from newest to oldest.
                 Include for each experiment the type, status, the query set id, 
                 the list of search configuration ids, the list of judgement list ids.
+                Do not just give the count of ids in search configuration list or
+                the judgement list list, make sure to include the ids.
                 """,
         assertions=tuple(
             [
