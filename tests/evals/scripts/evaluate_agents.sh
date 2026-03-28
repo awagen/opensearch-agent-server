@@ -40,6 +40,11 @@ run_relevance_agent_test_setup() {
   "$SCRIPT_DIR"/../relevance_tuning/scripts/generate_test_cases.sh
 }
 
+run_functional_relevance_agent_test(){
+  test_suite_name=$1
+  "$SCRIPT_DIR"/../relevance_tuning/scripts/run_eval.sh -k functional -t "$test_suite_name" -n
+}
+
 for i in "${array[@]}"; do
   case $i in
     rta_fast)
@@ -51,22 +56,22 @@ for i in "${array[@]}"; do
   esac
 done
 
-
+# prepare the test setup
 if [ $RUN_RELEVANCE_AGENT_FAST_TESTS ] || [ $RUN_RELEVANCE_AGENT_SLOW_TESTS ] || [ $RUN_RELEVANCE_AGENT_GENERATION_TESTS ] ; then
   run_relevance_agent_test_setup $RELEVANCE_AGENT_SCENARIO_NAME
 fi
 
 if [ $RUN_RELEVANCE_AGENT_FAST_TESTS ] ; then
   echo "Running fast evaluations for relevance_tuning agent"
-  "$SCRIPT_DIR"/../relevance_tuning/scripts/run_eval.sh -k functional -t fast -n
+  run_functional_relevance_agent_test fast
 fi
 
 if [ $RUN_RELEVANCE_AGENT_SLOW_TESTS ] ; then
   echo "Running slow evaluations for relevance_tuning agent"
-  "$SCRIPT_DIR"/../relevance_tuning/scripts/run_eval.sh -k functional -t slow -n
+  run_functional_relevance_agent_test slow
 fi
 
 if [ $RUN_RELEVANCE_AGENT_GENERATION_TESTS ] ; then
   echo "Running generation evaluations for relevance_tuning agent"
-  "$SCRIPT_DIR"/../relevance_tuning/scripts/run_eval.sh -k functional -t generation -n
+  run_functional_relevance_agent_test generation
 fi

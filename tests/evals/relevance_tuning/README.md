@@ -1,9 +1,20 @@
 ### Promptfoo Getting Started
+NOTE: when starting up the ag ui server, your working directory needs to be in the src folder
+of the opensearch-agent-server project, otherwise strands lib fails due to tools folder
+not found, which it expects in the working directory from which the server is started
+(startup example for port 8002 `uvicorn server.ag_ui_app:app --host 0.0.0.0 --port 8002`).
+
+
 Short descriptions to directly run evals. See more context below.
 
 - install promptfoo (global install cmd): `npm install -g promptfoo`
 - install `@aws-sdk/client-bedrock-runtime` via: `npm install @aws-sdk/client-bedrock-runtime`
 - see .env in project root for promptfoo-related properties and fill in
+- a script that combines index entry generation, indexing test generation and test running
+  can be found within `tests/evals/scripts/evaluate_agents.sh` where test suites to run can be 
+  passed, and depending on the selected suites different agents will be tested. Initially
+  this only contains the tests for the relevancy agent.
+  The below steps are only needed if you need to call them separately for some reason.
 - in the tests_promptfoo folder you find a script folder to run all relevant steps:
   - `generate_index_data.sh`: generates synthetic index data for programmatic test cases. 
     - events
