@@ -3,7 +3,12 @@
 set -o pipefail
 
 SCRIPT_DIR="$(dirname "$0")"
-source "$SCRIPT_DIR"/../../../../.env
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../../../../" && pwd)"
+source "$PROJECT_ROOT/.env"
+
+# Point promptfoo's Python worker at the project venv so deps like `requests`
+# are available. The venv is created on first `uv run` (generate_test_cases.sh).
+VENV_PYTHON="$PROJECT_ROOT/.venv/bin/python"
 
 TEST_FOLDER=''
 OUTPUT_BASE_NAME=$(date +%s)
