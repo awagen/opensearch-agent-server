@@ -170,7 +170,7 @@ class OpenSearchClientManager:
             timeout: Connection timeout in seconds (default: 30)
         """
         self.opensearch_url = opensearch_url or os.getenv(
-            "OPENSEARCH_URL",
+            "TEST_GEN_OPENSEARCH_URL",
             "http://localhost:9200",
         )
         self.username = username
