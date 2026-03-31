@@ -8,9 +8,9 @@ from src.utils.tool_utils import list_experiment
 
 
 class ExperimentEvaluationResult(BaseModel):
-    evaluationId: str | None
-    queryText: str
-    searchConfigurationId: str
+    evaluationId: str | None = None
+    query_text: str | None = None
+    searchConfigurationId: str | None = None
 
 
 class ErrorMsg(BaseModel):
