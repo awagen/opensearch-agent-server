@@ -41,6 +41,10 @@ dev = [
     "pytest-timeout>=2.3.0",
     "mypy>=1.0.0",
 ]
+evals = [
+    "numpy>=1.26.0",
+    "requests>=2.32.0",
+]
 
 [tool.ruff]
 line-length = 88
