@@ -22,4 +22,4 @@ done
 
 
 
-python "$SCRIPT_DIR"/../functional_test_generation/src/index_gen/index_scenarios.py --scenario_name "$SCENARIO"
+uv run --extra evals python "$SCRIPT_DIR"/../functional_test_generation/src/index_gen/index_scenarios.py --scenario_name "$SCENARIO"
